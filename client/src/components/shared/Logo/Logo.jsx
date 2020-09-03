@@ -6,6 +6,7 @@ const LogoContainer = styled.div`
   display: flex;
   align-items: center;
   flex-flow: column;
+  
 `
 
 const LogoNav = styled(NavLink)`
@@ -13,13 +14,16 @@ const LogoNav = styled(NavLink)`
   align-items: center;
   text-decoration: none;
   color: white;
-  font-size: 12px;
+  font-size: 20px;
   letter-spacing: 2px;
 `
 
-const Zahra = styled.h1`
-  font-weight: 600;
+const Zahra = styled.span`
+  font-weight: 800;
   text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  margin-top: 30px;
+  
 `
 
 export default function Logo() {

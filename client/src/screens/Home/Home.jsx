@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import Logo from '../../components/shared/Logo/Logo'
+import Nav from '../../components/shared/Nav/Nav'
 
 const HomeContainer = styled.div`
 	background-image: linear-gradient(to bottom, #FF8552, #FF27A8);
@@ -14,7 +14,7 @@ const HomeContainer = styled.div`
 export default function Home() {
 	return (
 		<HomeContainer>
-			<Logo />
+			<Nav />
 		</HomeContainer>
 	)
 }
