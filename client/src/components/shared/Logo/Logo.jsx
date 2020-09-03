@@ -1,0 +1,33 @@
+import React from 'react'
+import { NavLink } from 'react-router-dom'
+import styled from 'styled-components'
+
+const LogoContainer = styled.div`
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+`
+
+const LogoNav = styled(NavLink)`
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  font-size: 12px;
+  letter-spacing: 2px;
+`
+
+const Zahra = styled.h1`
+  font-weight: 600;
+  text-transform: uppercase;
+`
+
+export default function Logo() {
+  return (
+    <LogoContainer>
+      <LogoNav to="/">
+      <Zahra>Zahra</Zahra>
+      </LogoNav>
+    </LogoContainer>
+  )
+}
