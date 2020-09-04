@@ -1,6 +1,7 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import styled from 'styled-components'
+import {colors} from '../../../styles/global'
 
 const LogoContainer = styled.div`
   display: flex;
@@ -13,7 +14,7 @@ const LogoNav = styled(NavLink)`
   display: flex;
   align-items: center;
   text-decoration: none;
-  color: white;
+  color: ${colors.white};
   font-size: 20px;
   letter-spacing: 2px;
 `

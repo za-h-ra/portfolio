@@ -1,30 +1,37 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import Logo from '../Logo/Logo'
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
+import {colors} from '../../../styles/global'
 
 const NavBar = styled.nav`
 	background-color: transparent;
 	width: 100%;
 	height: 90px;
 	font-family: 'Roboto', sans-serif;
-	padding: 0px 60px;
+  padding: 0px 60px;
 
-	a {
+  a {
 		text-decoration: none;
 		text-transform: uppercase;
 		letter-spacing: 3px;
 		font-weight: 800;
-		color: white;
+		color: ${colors.white};
 		font-family: 'Roboto', sans-serif;
-		font-size: 20px;
-	}
+    font-size: 20px;
+
+    ${props => props.black && css`
+      color: ${colors.black};
+    `}
+  }
+  
 `
+
 
 const Work = styled(NavLink)`
 	position: fixed;
 	left: 40px;
-	top: 30px;
+  top: 30px;
 `
 
 const About = styled(NavLink)`
