@@ -20,7 +20,7 @@ const LogoNav = styled(NavLink)`
 `
 
 const Zahra = styled.span`
-  font-weight: 800;
+  font-weight: 600;
   text-transform: uppercase;
   font-family: 'Roboto', sans-serif;
   margin-top: 30px;

@@ -1,8 +1,8 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import Logo from '../Logo/Logo'
-import styled, { css } from 'styled-components'
-import {colors} from '../../../styles/global'
+import styled from 'styled-components'
+import { colors } from '../../../styles/global'
 
 const NavBar = styled.nav`
 	background-color: transparent;
@@ -15,14 +15,10 @@ const NavBar = styled.nav`
 		text-decoration: none;
 		text-transform: uppercase;
 		letter-spacing: 3px;
-		font-weight: 800;
+		font-weight: 600;
 		color: ${colors.white};
 		font-family: 'Roboto', sans-serif;
     font-size: 20px;
-
-    ${props => props.black && css`
-      color: ${colors.black};
-    `}
   }
   
 `
