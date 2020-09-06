@@ -49,6 +49,9 @@ const Github = styled.a`
     color: ${colors.matteBlack};
   }
 `
+const IconContainer = styled.div`
+
+`
 
 const Icon = styled.img`
   width: 40px;
@@ -61,8 +64,14 @@ export default function WorkCard(props) {
         <Image src={props.image} />
 				<br />
         <p>{props.title}</p>
-        <br />
-        <Icon src={props.html} /> <Icon src={props.react} />  <Icon src={props.styledComponents} /> <Icon src={props.node} /> <Icon src={props.ruby} /> <Icon src={props.rails} /> <Icon src={props.postgres} /> <Icon src={props.heroku} />
+        <IconContainer>
+          {props.icons && props.icons.map(icon => {
+            if (icon.includes('.png')) {
+              return <Icon src={require(`../../icons/${icon}`)} title={icon} />
+            }
+            return <Icon src={require(`../../icons/${icon}.svg`)} title={icon} />
+          })}
+        </IconContainer>
       </StyledLink>
 			<StyledText>{props.description}</StyledText>
 			<Github href={props.github}>See on Github</Github>
