@@ -20,9 +20,9 @@ const StyledLink = styled.a`
 	font-size: 16px;
 
 	&:hover {
-    color: #FF8552;
-    text-transform: uppercase;
-    font-weight: 700;
+		color: #ff8552;
+		text-transform: uppercase;
+		font-weight: 700;
 	}
 `
 
@@ -41,38 +41,46 @@ const StyledText = styled.p`
 `
 
 const Github = styled.a`
-  font-family: 'Inconsolata', monospace;
-  text-transform: lowercase;
-  color: grey;
+	font-family: 'Inconsolata', monospace;
+	text-transform: lowercase;
+	color: grey;
 
-  &:hover {
-    color: ${colors.matteBlack};
-  }
+	&:hover {
+		color: ${colors.matteBlack};
+	}
 `
 const IconContainer = styled.div`
-
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 5px 10px;
 `
 
 const Icon = styled.img`
-  width: 40px;
+	width: 40px;
 `
 
 export default function WorkCard(props) {
 	return (
 		<CardContainer>
 			<StyledLink href={props.url}>
-        <Image src={props.image} />
+				<Image src={props.image} />
 				<br />
-        <p>{props.title}</p>
-        <IconContainer>
-          {props.icons && props.icons.map(icon => {
-            if (icon.includes('.png')) {
-              return <Icon src={require(`../../icons/${icon}`)} title={icon} />
-            }
-            return <Icon src={require(`../../icons/${icon}.svg`)} title={icon} />
-          })}
-        </IconContainer>
-      </StyledLink>
+				<p>{props.title}</p>
+				<IconContainer>
+					{props.icons &&
+						props.icons.map((icon) => {
+							if (icon.includes('.png')) {
+								return (
+									<Icon src={require(`../../icons/${icon}`)} title={icon} />
+								)
+							}
+							return (
+								<Icon src={require(`../../icons/${icon}.svg`)} title={icon} />
+							)
+						})}
+				</IconContainer>
+			</StyledLink>
 			<StyledText>{props.description}</StyledText>
 			<Github href={props.github}>See on Github</Github>
 		</CardContainer>
