@@ -9,10 +9,11 @@ const CardContainer = styled.div`
 	align-items: center;
 	margin: 20px auto;
 	width: 650px;
+	padding: 20px 0;
 `
 
 const StyledLink = styled.a`
-	font-family: 'Inconsolata', monospace;
+	font-family: 'Nanum Gothic', sans-serif;
 	text-decoration: none;
 	text-transform: lowercase;
 	text-align: center;
@@ -35,9 +36,9 @@ const Image = styled.img`
 `
 
 const StyledText = styled.p`
-	font-family: 'Inconsolata', monospace;
+	font-family: 'Nanum Gothic', sans-serif;
 	text-transform: lowercase;
-	text-align: center;
+	text-align: justify;
 `
 
 const Github = styled.a`
