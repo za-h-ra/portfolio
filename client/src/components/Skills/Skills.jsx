@@ -1,7 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const SkillsContainer = styled.div``
+const SkillsContainer = styled.div`
+
+`
 
 const Skill = styled.div``
 
@@ -12,7 +14,6 @@ export default function Skills(props) {
 		<SkillsContainer>
 			<Skill>
         <SkillInfo>
-          <img src={props.icon} />
           <span>{props.skill}</span>
         </SkillInfo>
 			</Skill>
