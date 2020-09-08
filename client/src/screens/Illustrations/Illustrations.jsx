@@ -14,7 +14,7 @@ export default function Illustrations() {
   return (
     <StyledDiv>
       <Nav />
-      <h1>ALL ILLUSTRATIONS</h1>
+      <h1>TBD</h1>
     </StyledDiv>
   )
 }
