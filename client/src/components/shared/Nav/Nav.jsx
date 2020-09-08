@@ -20,9 +20,7 @@ const NavBar = styled.nav`
 		font-family: 'Roboto', sans-serif;
     font-size: 20px;
   }
-  
 `
-
 
 const Work = styled(NavLink)`
 	position: fixed;
@@ -57,7 +55,7 @@ export default function Nav() {
 			<Work to='/work'>Work</Work>
 			<About to='/about'>About</About>
 			<Illustrations to='/illustrations'>Illustrations</Illustrations>
-			<Resume to='/resume'>Resume</Resume>
+			<Resume to='https://docdro.id/nc46EAT'>Resume</Resume>
 		</NavBar>
 	)
 }
