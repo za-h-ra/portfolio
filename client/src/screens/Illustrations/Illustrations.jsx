@@ -11,16 +11,42 @@ const StyledNav = styled.div`
 	}
 `
 
-const GalleryContainer = styled.div``
+const GalleryContainer = styled.div`
+  width: 100%;
+  padding: 60px 0;
 
-const GalleryInner = styled.div``
+  h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 800;
+    font-size: 26px;
+    letter-spacing: 2px;
+  }
 
-const Border = styled.div``
+`
+
+const GalleryInner = styled.div`
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+`
+
+const Border = styled.div`
+  width: 180px;
+  height: 4px;
+  background: black;
+  margin: 40px auto;
+
+`
 
 const Gallery = styled.div`
-	img {
-		height: 300px;
-	}
+  
+img {
+  height: 300px;
+}
+
 `
 
 export default function Illustrations() {
