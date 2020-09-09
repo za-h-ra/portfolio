@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import Nav from '../../components/shared/Nav/Nav'
+import Footer from '../../components/shared/Footer/Footer'
 import { Link } from 'react-router-dom'
 
 const HomeContainer = styled.div`
@@ -9,6 +10,8 @@ const HomeContainer = styled.div`
 	top: 0;
 	bottom: 0;
 	width: 100%;
+	height: 100vh;
+	min-height: 100vh;
 	color: white;
 `
 
@@ -70,7 +73,10 @@ export default function Home() {
 				can still see all of her <WorkLink to='/work'>work</WorkLink> and say{' '}
 				<i>hello</i> via{' '}
 				<EmailLink href='mailto: zahra.khan1@icloud.com'>email</EmailLink> or{' '}
-				<LinkedInLink href='https://www.linkedin.com/in/zahra-khan-01/'>LinkedIn</LinkedInLink>.
+				<LinkedInLink href='https://www.linkedin.com/in/zahra-khan-01/'>
+					LinkedIn
+				</LinkedInLink>
+				.
 			</AboutText>
 		</HomeContainer>
 	)

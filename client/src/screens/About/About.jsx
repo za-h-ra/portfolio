@@ -61,20 +61,20 @@ const AboutText = styled.div`
 `
 
 const ContactMe = styled.p`
-  font-family: 'Inconsolata';
-  
-  a {
-    color: grey;
-    font-weight: normal;
-  }
+	font-family: 'Inconsolata', monospace;
+
+	a {
+		color: grey;
+		font-weight: normal;
+	}
 `
 
 const ContactLink = styled.a`
-  text-decoration: none;
-  
-  &:hover {
-    text-decoration: underline;
-  }
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: underline;
+	}
 `
 
 export default function About() {
