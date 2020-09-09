@@ -14,7 +14,6 @@ export default function Resume() {
   return (
     <StyledDiv>
       <Nav />
-      <h1>RESUME</h1>
     </StyledDiv>
   )
 }
