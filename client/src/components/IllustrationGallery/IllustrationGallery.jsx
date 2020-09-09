@@ -2,32 +2,30 @@ import React from 'react'
 import styled from 'styled-components'
 
 const GalleryCard = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 
-  img {
-    flex: 25%;
-    overflow: hidden;
-    cursor: pointer;
-  }
+	img {
+		flex: 25%;
+		overflow: hidden;
+		cursor: pointer;
+	}
 
-  @media screen and (max-width:960px) {
-    flex: 33.33%
-  }
+	@media screen and (max-width: 960px) {
+		flex: 33.33%;
+	}
 `
 
 const Image = styled.img`
-  transition: 0.4s;
+	transition: 0.4s;
 
-  &:hover {
-    transform: scale(1.4) rotate(15deg);
-  }
+	&:hover {
+		transform: scale(1.4) rotate(15deg);
+	}
 `
 
 export default function IllustrationGallery() {
-
-
 	return (
 		<GalleryCard>
 			<a href={require('../../illustrations/20.png')}>
