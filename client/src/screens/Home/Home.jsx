@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 import Nav from '../../components/shared/Nav/Nav'
-import Footer from '../../components/shared/Footer/Footer'
 import { Link } from 'react-router-dom'
 
 const HomeContainer = styled.div`
@@ -76,7 +75,6 @@ export default function Home() {
 				<LinkedInLink href='https://www.linkedin.com/in/zahra-khan-01/'>
 					LinkedIn
 				</LinkedInLink>
-				.
 			</AboutText>
 		</HomeContainer>
 	)
