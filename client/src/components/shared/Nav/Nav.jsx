@@ -41,7 +41,7 @@ const Illustrations = styled(NavLink)`
 	transform: translate(-40%, -50%) rotate(-90deg);
 `
 
-const Resume = styled(NavLink)`
+const Resume = styled.a`
 	position: fixed;
 	top: 50%;
 	right: 40px;
@@ -55,7 +55,7 @@ export default function Nav() {
 			<Work to='/work'>Work</Work>
 			<About to='/about'>About</About>
 			<Illustrations to='/illustrations'>Illustrations</Illustrations>
-			<Resume to='/resume'>Resume</Resume>
+			<Resume href="https://docdro.id/9pBbwGE">Resume</Resume>
 		</NavBar>
 	)
 }
