@@ -9,23 +9,23 @@ const NavBar = styled.nav`
 	width: 100%;
 	height: 90px;
 	font-family: 'Roboto', sans-serif;
-  padding: 0px 60px;
+	padding: 0px 60px;
 
-  a {
+	a {
 		text-decoration: none;
 		text-transform: uppercase;
 		letter-spacing: 3px;
 		font-weight: 600;
 		color: ${colors.white};
 		font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-  }
+		font-size: 20px;
+	}
 `
 
 const Work = styled(NavLink)`
 	position: fixed;
 	left: 40px;
-  top: 30px;
+	top: 30px;
 `
 
 const About = styled(NavLink)`
@@ -55,7 +55,7 @@ export default function Nav() {
 			<Work to='/work'>Work</Work>
 			<About to='/about'>About</About>
 			<Illustrations to='/illustrations'>Illustrations</Illustrations>
-			<Resume href="https://docdro.id/9pBbwGE">Resume</Resume>
+			<Resume href='https://docdro.id/DjrPyO6'>Resume</Resume>
 		</NavBar>
 	)
 }
