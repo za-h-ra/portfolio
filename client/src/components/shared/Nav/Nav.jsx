@@ -55,7 +55,7 @@ export default function Nav() {
 			<Work to='/work'>Work</Work>
 			<About to='/about'>About</About>
 			<Illustrations to='/illustrations'>Illustrations</Illustrations>
-			<Resume href='https://docdro.id/DjrPyO6'>Resume</Resume>
+			<Resume href='https://docdro.id/LIpaLTX'>Resume</Resume>
 		</NavBar>
 	)
 }
