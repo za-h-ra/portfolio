@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom'
 import Logo from '../Logo/Logo'
 import styled from 'styled-components'
 import { colors } from '../../../styles/global'
+import ZKResume from '../../../assets/resume.pdf'
 
 const NavBar = styled.nav`
 	background-color: transparent;
@@ -55,7 +56,7 @@ export default function Nav() {
 			<Work to='/work'>Work</Work>
 			<About to='/about'>About</About>
 			<Illustrations to='/illustrations'>Illustrations</Illustrations>
-			<Resume href='https://docdro.id/Wo5QNUQ'>Resume</Resume>
+      <Resume href={ZKResume}>Resume</Resume>
 		</NavBar>
 	)
 }
