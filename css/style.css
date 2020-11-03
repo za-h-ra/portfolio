@@ -80,6 +80,10 @@ img {
     display: block;
 }
 
+.skills-img {
+    height: 20px;
+}
+
 .section-title {
     position: relative;
     font-size: var(--h2-font-size);
