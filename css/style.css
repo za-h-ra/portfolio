@@ -3,104 +3,181 @@
 /* ------------ VARIABLES ----------- */
 :root {
 	--header-height: 3rem;
-    --font-weight: 500;
-    
-    /* COLORS */ 
-	--primary-color: #D980FA;
-    --secondary-color: #5758BB;
-    ;
-    
-    /* FONT & SIZES */ 
+	--font-weight: 500;
+
+	/* COLORS */
+	--primary-color: #1dd1a1;
+	--secondary-color: #130f40;
+	/* FONT & SIZES */
 	--body-font: 'Poppins', sans-serif;
 	--large-font-size: 2rem;
 	--h2-font-size: 1.25rem;
-    --primary-font-size: 0.938rem;
-    
-    /* MARGINS */
-    --mb-1: 0.5rem;
-    --mb-2: 1rem;
-    --mb-3: 1.5rem;
-    --mb-4: 2rem;
-    --mb-5: 2.5rem;
-    --mb-6: 3rem;
+	--primary-font-size: 0.938rem;
 
-    /* Z-INDEX */
-    --z-back: -10;
-    --z-normal: 1;
-    --z-tooltip: 10;
-    --z-fixed: 100;
+	/* MARGINS */
+	--mb-1: 0.5rem;
+	--mb-2: 1rem;
+	--mb-3: 1.5rem;
+	--mb-4: 2rem;
+	--mb-5: 2.5rem;
+	--mb-6: 3rem;
 
+	/* Z-INDEX */
+	--z-back: -10;
+	--z-normal: 1;
+	--z-tooltip: 10;
+	--z-fixed: 100;
 }
 
 /* ------- MEDIA QUERIES --------- */
 @media screen and (min-width: 768px) {
-:root {
-	--large-font-size: 3.5rem;
-	--h2-font-size: 2rem;
-	--primary-font-size: 1rem;
+	:root {
+		--large-font-size: 3.5rem;
+		--h2-font-size: 2rem;
+		--primary-font-size: 1rem;
 	}
 }
 
 *,
 ::before,
 ::after {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 html {
-    scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
 
 body {
-    margin: var(--header-height) 0 0 0;
-    font-family: var(--body-font);
-    font-size: var(--primary-font-size);
-    color: var(--secondary-color);
+	margin: var(--header-height) 0 0 0;
+	font-family: var(--body-font);
+	font-size: var(--primary-font-size);
+	color: var(--secondary-color);
 }
 
 h1,
 h2,
 p {
-    margin: 0;
+	margin: 0;
 }
 
 ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+	margin: 0;
+	padding: 0;
+	list-style: none;
 }
 
 a {
-    text-decoration: none;
+	text-decoration: none;
 }
 
 img {
-    max-width: 100%;
-    height: auto;
-    display: block;
+	max-width: 100%;
+	height: auto;
+	display: block;
 }
 
 .skills-img {
-    height: 20px;
+	height: 20px;
 }
 
 .section-title {
-    position: relative;
-    font-size: var(--h2-font-size);
-    color: var(--primary-color);
-    margin-top: var(--mb-2);
-    margin-bottom: var(--mb-4);
-    text-align: center;
+	position: relative;
+	font-size: var(--h2-font-size);
+	color: var(--primary-color);
+	margin-top: var(--mb-2);
+	margin-bottom: var(--mb-4);
+	text-align: center;
 }
 
 .section-title::after {
+	content: '';
+	position: absolute;
+	width: 64px;
+	height: 0.18rem;
+	left: 0;
+	right: 0;
+	margin: auto;
+	top: 2rem;
+	background-color: var(--primary-color);
+}
+
+.section {
+	padding-top: 3rem;
+	padding-bottom: 2rem;
+}
+
+.bd-grid {
+	max-width: 1024px;
+	display: grid;
+	grid-template-columns: 100%;
+	grid-column-gap: 2rem;
+	width: calc(100% - 2rem);
+	margin-left: var(--mb-2);
+	margin-right: var(--mb-2);
+}
+
+.primary-header {
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: var(--z-fixed);
+	background-color: #fff;
+	box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
+}
+
+.nav {
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: var(--font-weight);
+
+}
+
+@media screen and (max-width: 768px) {
+    .nav__menu {
+        position: fixed;
+        top: var(--header-height);
+        right: 0;
+        width: 80%;
+        height: 100%;
+        padding: 2rem;
+        background-color: var(--secondary-color);
+        transition: .5s;
+    }
+}
+
+.nav__item {
+    margin-bottom: var(--mb-4);
+}
+
+.nav__link {
+    position: relative;
+    color: #fff;
+}
+
+.nav__link:hover {
+    position: relative;
+}
+
+.nav__link:hover::after {
     content: "";
     position: absolute;
-    width: 64px;
+    width: 100%;
     height: 0.18rem;
     left: 0;
-    right: 0;
-    margin: auto;
     top: 2rem;
     background-color: var(--primary-color);
+}
+
+.nav__logo {
+    color: var(--primary-color);
+}
+
+.nav__toggle {
+    color: var(--secondary-color);
+    font-size: 1.5rem;
+    cursor: pointer;
 }
