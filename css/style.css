@@ -433,24 +433,40 @@ img {
 		bottom: 15%;
 	}
 
-	.about__container, .skills__container {
+	.about__container,
+	.skills__container {
 		grid-template-columns: repeat(2, 1fr);
 		align-items: center;
 		text-align: initial;
-    }
-    
-    .about__img img {
-        width: 400px;
-    }
+	}
 
-    .work__container {
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        column-gap: 2rem;
-    }
+	.about__img img {
+		width: 400px;
+	}
 
-    .contact__form {
-        
-    }
+	.work__container {
+		grid-template-columns: repeat(3, 1fr);
+		/* grid-template-rows: repeat(2, 1fr); */
+		column-gap: 2rem;
+	}
 
+	.contact__form {
+		width: 360px;
+	}
+
+	.contact__container {
+		justify-items: center;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.bd-grid {
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: auto;
+	}
+
+	.home__img {
+		right: 10%;
+	}
 }
