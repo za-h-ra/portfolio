@@ -40,7 +40,7 @@
     <section class="home bd-grid" id="home">
         <div class="home__data">
         <h1 class="home__title">Hi, <br> I'm <span class="home__title-color">Zahra</span><br> Software Engineer </h1>
-        <a href="#" class="button">Contact</a>
+        <a href=mailto:zahra.khan@icloud.com? subject="hi, there!" class="button">Contact</a>
     </div>
 
     <div class="home__social">
@@ -148,11 +148,12 @@
         <h2 class="section-title">Contact</h2>
 
         <div class="contact__container bd-grid">
-            <form action="" class="contact__form">
-                <input type="text" placeholder="Name" class="contact__input">
-                <input type="mail" placeholder="Email" class="contact__input">
-                <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-                <input type="button" value="say hello!" class="contact__button button">
+            <form action="POST" data-netlify="true" class="contact__form">
+                <input type="text" name="name" id="name" placeholder="Name" class="contact__input">
+                <input type="mail" name="email" id="email"  placeholder="Email" class="contact__input">
+                <textarea name="message" id="message" id="" cols="0" rows="10" class="contact__input"></textarea>
+                <div data-netlify-recaptcha="true"></div>
+                <input type="submit" value="Say Hello!" class="contact__button button">
             </form>
         </div>
 

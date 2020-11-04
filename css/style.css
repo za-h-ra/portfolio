@@ -364,7 +364,9 @@ img {
 	outline: none;
 	font-size: var(--primary-font-size);
 	cursor: pointer;
-	margin-left: auto;
+    margin-left: auto;
+    font-size: var(--primary-font-size);
+    font-weight: var(--font-weight);
 }
 
 .footer {
