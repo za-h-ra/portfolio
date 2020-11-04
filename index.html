@@ -149,10 +149,15 @@
 
         <div class="contact__container bd-grid">
             <form action="POST" data-netlify="true" class="contact__form">
+            <div class="field">
                 <input type="text" name="name" id="name" placeholder="Name" class="contact__input">
+            </div>
+            <div class="field">
                 <input type="mail" name="email" id="email"  placeholder="Email" class="contact__input">
+            </div>
+            <div class="field">
                 <textarea name="message" id="message" id="" cols="0" rows="10" class="contact__input"></textarea>
-                <div data-netlify-recaptcha="true"></div>
+            </div>
                 <input type="submit" value="Say Hello!" class="contact__button button">
             </form>
         </div>
