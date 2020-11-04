@@ -41,8 +41,9 @@ scroll.reveal('.about__subtitle', { delay: 200 })
 scroll.reveal('.about__text', { delay: 400 })
 
 scroll.reveal('.skills__subtitle', {})
-scroll.reveal('.skills__text', { delay: 200 })
-scroll.reveal('.skills__data', { interval: 200 })
+scroll.reveal('.skills__name', { distance: '20px', delay: 50, interval: 100 })
+scroll.reveal('.skills__img', {delay: 400})
+
 
 scroll.reveal('.work__img', { interval: 200 })
 
