@@ -451,11 +451,13 @@ img {
 	}
 
 	.contact__form {
-		width: 360px;
+        width: 360px;
+        margin-bottom: var(--mb-6);
 	}
 
 	.contact__container {
-		justify-items: center;
+        justify-items: center;
+        align-items: center;
 	}
 }
 
