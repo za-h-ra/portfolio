@@ -364,18 +364,18 @@ img {
 	outline: none;
 	font-size: var(--primary-font-size);
 	cursor: pointer;
-    margin-left: auto;
-    font-size: var(--primary-font-size);
-    font-weight: var(--font-weight);
+	margin-left: auto;
+	font-size: var(--primary-font-size);
+	font-weight: var(--font-weight);
 }
 
 .footer {
-    background-color: var(--secondary-color);
-    row-gap: 2rem;
+	background-color: var(--secondary-color);
+	row-gap: 2rem;
 	color: #fff;
 	text-align: center;
 	font-weight: var(--font-weight);
-    padding: 2rem 0;
+	padding: 2rem 0;
 }
 
 .footer__title {
