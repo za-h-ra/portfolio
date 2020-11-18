@@ -6,8 +6,8 @@
 	--font-weight: 500;
 
 	/* COLORS */
-    --primary-color: #1dd1a1;
-    --primary-hover-color: #149c77;
+	--primary-color: #f6534e;
+	--primary-gradient-color: #ff894c;
 	--secondary-color: #130f40;
 	/* FONT & SIZES */
 	--body-font: 'Poppins', sans-serif;
@@ -238,7 +238,11 @@ img {
 
 .button {
 	display: inline-block;
-	background-color: var(--primary-color);
+	background-image: linear-gradient(
+		to right,
+		var(--primary-gradient-color),
+		var(--primary-color)
+	);
 	color: #fff;
 	padding: 0.75rem 2.5rem;
 	font-weight: var(--font-weight);
@@ -249,18 +253,18 @@ img {
 	box-shadow: 0 10px 36px rgba(0, 0, 0, 0.15);
 }
 
-.button-link  {
-    background: none;
-    color: var(--primary-color);
-    padding: 0;
-    display: block;
-    margin: var(--mb-2) 0;
+.button-link {
+	background: none;
+	color: var(--primary-gradient-color);
+	padding: 0;
+	display: block;
+	margin: var(--mb-2) 0;
 }
 
 .button-link:hover {
-    background: none;
-    box-shadow: none;
-    color: var(--primary-hover-color);
+	background: none;
+	box-shadow: none;
+	color: var(--primary-color);
 }
 
 .about__container {
@@ -323,9 +327,9 @@ img {
 	background-color: #fff;
 	border-radius: 0.5rem;
 	overflow: hidden;
-    box-shadow: 0 4px 6px rgba(174, 190, 205, 0.3);
-    position: relative;
-    height: 650px;
+	box-shadow: 0 4px 6px rgba(174, 190, 205, 0.3);
+	position: relative;
+	height: 650px;
 }
 
 .project__img {
@@ -338,12 +342,11 @@ img {
 }
 
 .project__content:hover .project__img {
-    transform: scale(1.02);
+	transform: scale(1.02);
 }
 
 .project__data {
-    padding: 1.5rem;
-
+	padding: 1.5rem;
 }
 
 .project__title {
@@ -353,23 +356,12 @@ img {
 }
 
 .project__title:hover {
-    color: var(--primary-hover-color)
+	color: var(--primary-hover-color);
 }
+
 .project__subtitle {
 	font-size: var(--primary-font-size);
 	color: var(--secondary-color);
-}
-
-.project__language {
-    display: flex;
-    flex-direction: row;
-    padding: 1.5rem;
-    position: absolute;
-    bottom: 0;
-}
-
-.project__language img {
-    width: 30px;
 }
 
 .contact__input {
@@ -503,11 +495,7 @@ img {
 		grid-template-columns: repeat(3, 1fr);
 		/* grid-template-rows: repeat(2, 1fr); */
 		column-gap: 2rem;
-    }
-    
-    .project-content {
-        height: 1024px;
-    }
+	}
 
 	.contact__form {
 		width: 360px;
@@ -529,9 +517,9 @@ img {
 
 	.home__img {
 		right: 10%;
-    }
-    
-       .project-content {
-        height: 1024px;
-    }
+	}
+
+	.project-content {
+		height: 1024px;
+	}
 }
