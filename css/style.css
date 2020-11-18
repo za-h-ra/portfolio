@@ -255,7 +255,7 @@ img {
 
 .button-link {
 	background: none;
-	color: var(--primary-gradient-color);
+	color: var(--primary-color);
 	padding: 0;
 	display: block;
 	margin: var(--mb-2) 0;
@@ -264,7 +264,7 @@ img {
 .button-link:hover {
 	background: none;
 	box-shadow: none;
-	color: var(--primary-color);
+	color: var(--primary-gradient-color);
 }
 
 .about__container {
@@ -356,7 +356,7 @@ img {
 }
 
 .project__title:hover {
-	color: var(--primary-hover-color);
+	color: var(--primary-gradient-color);
 }
 
 .project__subtitle {
