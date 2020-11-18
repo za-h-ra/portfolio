@@ -46,6 +46,5 @@ scroll.reveal('.skills__img', {delay: 400})
 
 
 scroll.reveal('.project__img', { interval: 200 })
-scroll.reveal('.project__language-img', { interval: 200 })
 
 scroll.reveal('.contact__input', { interval: 200 })

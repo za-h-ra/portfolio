@@ -104,9 +104,13 @@ img {
 	padding-bottom: 2rem;
 }
 
+/* ---------- LAYOUT --------- */
+
+
 .bd-grid {
 	max-width: 1024px;
 	display: grid;
+	gap: 1.5rem;
 	grid-template-columns: 100%;
 	grid-column-gap: 2rem;
 	width: calc(100% - 2rem);
@@ -145,6 +149,7 @@ img {
 	}
 }
 
+/* ------- NAV ------- */
 .nav__item {
 	margin-bottom: var(--mb-4);
 }
@@ -236,13 +241,14 @@ img {
 	width: 350px;
 }
 
+/* BUTTON */
+
 .button {
 	display: inline-block;
 	background-image: linear-gradient(
 		to right,
 		var(--primary-gradient-color),
-		var(--primary-color)
-	);
+		var(--primary-color));
 	color: #fff;
 	padding: 0.75rem 2.5rem;
 	font-weight: var(--font-weight);
@@ -267,6 +273,8 @@ img {
 	color: var(--primary-gradient-color);
 }
 
+/* ABOUT SECTION */ 
+
 .about__container {
 	row-gap: 2rem;
 	text-align: center;
@@ -283,6 +291,8 @@ img {
 .about__img img {
 	width: 300px;
 }
+
+/* SKILLS */
 
 .skills__container {
 	row-gap: 2rem;
@@ -313,37 +323,23 @@ img {
 	border-radius: 0.5rem;
 }
 
-.project__nav {
-	text-align: center;
-	margin-bottom: var(--mb-3);
-}
-
-.project__item {
-	margin: 0 var(--mb-2);
-	cursor: pointer;
-}
+/* PROJECT */
 
 .project__content {
 	background-color: #fff;
 	border-radius: 0.5rem;
 	overflow: hidden;
-	box-shadow: 0 4px 6px rgba(174, 190, 205, 0.3);
-	position: relative;
-	height: 650px;
+	box-shadow: 0 4px 6px rgba(129, 129, 129, 0.3);
+}
+
+.project__content:hover {
+	box-shadow: 0 6px 8px rgba(129, 129, 129, 0.4);
 }
 
 .project__img {
 	width: 100%;
-	transition: 0.4s;
 }
 
-.project__content:hover {
-	box-shadow: 0 6px 8px rgba(174, 190, 205, 0.4);
-}
-
-.project__content:hover .project__img {
-	transform: scale(1.02);
-}
 
 .project__data {
 	padding: 1.5rem;
@@ -363,6 +359,9 @@ img {
 	font-size: var(--primary-font-size);
 	color: var(--secondary-color);
 }
+
+
+/* CONTACT */
 
 .contact__input {
 	width: 100%;
@@ -385,6 +384,8 @@ img {
 	font-size: var(--primary-font-size);
 	font-weight: var(--font-weight);
 }
+
+/* FOOTER */
 
 .footer {
 	background-color: var(--secondary-color);
@@ -481,7 +482,7 @@ img {
 	}
 
 	.about__container,
-	.skills__container {
+    .skills__container {
 		grid-template-columns: repeat(2, 1fr);
 		align-items: center;
 		text-align: initial;
