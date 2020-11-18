@@ -294,35 +294,76 @@ img {
 	border-radius: 0.5rem;
 }
 
-.work {
+.project__nav {
+	text-align: center;
+	margin-bottom: var(--mb-3);
+}
+
+.project__item {
+	margin: 0 var(--mb-2);
+	cursor: pointer;
+}
+
+.project__content {
+	background-color: #fff;
+	border-radius: 0.5rem;
+	overflow: hidden;
+	box-shadow: 0 4px 6px rgba(174, 190, 205, 0.3);
+}
+
+.project__img {
+	width: 100%;
+	transition: 0.4s;
+}
+
+.project__data {
+	padding: 1.5rem;
+}
+
+.project__title {
+	font-size: var(--h2-font-size);
+	color: var(--primary-color);
+	margin: var(--mb-2) 0;
+}
+
+.project__subtitle {
+	font-size: var(--primary-font-size);
+	color: var(--secondary-color);
+}
+
+.project__content:hover {
+	box-shadow: 0 6px 8px rgba(174, 190, 205, 0.4);
+}
+
+/* .project {
 	text-align: center;
 }
 
-.work__container {
+.project__container {
 	row-gap: 2rem;
 }
 
-.work__img {
+.project__img {
 	box-shadow: 0 4px 25px rgba(14, 36, 49, 0.15);
 	border-radius: 0.5rem;
 	overflow: hidden;
 	position: relative;
 }
 
-.work__img img {
+.project__img img {
 	transition: 1s;
 	cursor: pointer;
 }
 
-.work__img img:hover {
+.project__img img:hover {
 	transform: scale(1.1);
 }
 
-.work__img:hover .work__link {
+.project__img:hover .project__link {
 	bottom: 0;
 }
 
-.work__link {
+.project__link {
 	position: absolute;
 	bottom: -100%;
 	width: 100%;
@@ -336,16 +377,16 @@ img {
 	transition: 0.3s;
 }
 
-.work__link-name {
+.project__link-name {
 	color: var(--primary-color);
 	font-weight: var(--font-weight);
 }
 
-.work__link-title {
+.project__link-title {
 	color: var(--primary-color);
 	text-decoration: underline;
 	text-transform: uppercase;
-}
+} */
 
 .contact__input {
 	width: 100%;
@@ -364,18 +405,18 @@ img {
 	outline: none;
 	font-size: var(--primary-font-size);
 	cursor: pointer;
-    margin-left: auto;
-    font-size: var(--primary-font-size);
-    font-weight: var(--font-weight);
+	margin-left: auto;
+	font-size: var(--primary-font-size);
+	font-weight: var(--font-weight);
 }
 
 .footer {
-    background-color: var(--secondary-color);
-    row-gap: 2rem;
+	background-color: var(--secondary-color);
+	row-gap: 2rem;
 	color: #fff;
 	text-align: center;
 	font-weight: var(--font-weight);
-    padding: 2rem 0;
+	padding: 2rem 0;
 }
 
 .footer__title {
@@ -474,7 +515,7 @@ img {
 		width: 400px;
 	}
 
-	.work__container {
+	.project__container {
 		grid-template-columns: repeat(3, 1fr);
 		/* grid-template-rows: repeat(2, 1fr); */
 		column-gap: 2rem;
