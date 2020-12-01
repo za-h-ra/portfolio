@@ -292,6 +292,13 @@ img {
 	width: 300px;
 }
 
+.about__email-link {
+    color: var(--primary-color);
+}
+
+.about__email-link:hover {
+    color: var(--primary-gradient-color);
+}
 /* SKILLS */
 
 .skills__container {
@@ -495,7 +502,7 @@ img {
 	}
 
 	.about__img img {
-		width: 400px;
+		width: 500px;
 	}
 
 	.project__container {
