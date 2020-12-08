@@ -402,11 +402,13 @@ img {
 
 .footer {
 	background-color: var(--secondary-color);
-	row-gap: 2rem;
 	color: #fff;
 	text-align: center;
 	font-weight: var(--font-weight);
-	padding: 2rem 0;
+    padding: 2rem 0;
+    
+    
+    
 }
 
 .footer__title {
@@ -490,8 +492,8 @@ img {
 	}
 
 	.home__img {
-		width: 457px;
-		bottom: 15%;
+		width: 425px;
+		bottom: 5%;
 	}
 
 	.about__container,
@@ -535,7 +537,9 @@ img {
 	}
 
 	.home__img {
-		right: 10%;
+        right: 10%;
+        width: 550px;
+        bottom: 10%;
 	}
 
 	.project-content {
