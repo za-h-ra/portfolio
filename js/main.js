@@ -23,17 +23,16 @@ function linkAction() {
 
 navLink.forEach((n) => n.addEventListener('click', linkAction))
 
-
 const scroll = ScrollReveal({
-    origin: 'top',
-    distance: '80px',
-    duration: 2000,
-    reset: true
+	origin: 'top',
+	distance: '80px',
+	duration: 2000,
+	reset: false
 })
 
 scroll.reveal('.home__title', {})
 scroll.reveal('.button', { delay: 200 })
-scroll.reveal('.home__img', { delay: 400})
+scroll.reveal('.home__img', { delay: 400 })
 scroll.reveal('.home__social-icon', { interval: 200 })
 
 scroll.reveal('.about__img', {})
@@ -42,8 +41,7 @@ scroll.reveal('.about__text', { delay: 400 })
 
 scroll.reveal('.skills__subtitle', {})
 scroll.reveal('.skills__name', { distance: '20px', delay: 50, interval: 100 })
-scroll.reveal('.skills__img', {delay: 400})
-
+scroll.reveal('.skills__img', { delay: 400 })
 
 scroll.reveal('.project__img', { interval: 200 })
 scroll.reveal('.illustration__img', { interval: 200 })
